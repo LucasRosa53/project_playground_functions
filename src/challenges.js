@@ -1,5 +1,5 @@
 // Desafio 1
-compareTrue(true, false);
+
 function compareTrue(param1, param2) {
   if (param1 === true && param2 === true) {
     return true;
@@ -26,8 +26,9 @@ return splitSentence;
 
 
 // Desafio 4
-function concatName() {
-
+function concatName(array) {
+  return array [array.length -1] + ', ' + array [0];
+  
 }
 
 // Desafio 5
