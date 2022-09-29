@@ -73,9 +73,10 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 
-let retornar = [];
+
 function fizzBuzz(numero) {
-  
+  let retornar = [];
+
   for (let index = 0; index < numero.length; index += 1) {
     if (numero[index] % 3 === 0 && numero[index] % 5 === 0) {
       retornar.push('fizzBuzz');
@@ -88,7 +89,7 @@ function fizzBuzz(numero) {
   }
   return retornar;
 }
-console.log(fizzBuzz(9, 25));
+console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode() {
