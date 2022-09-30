@@ -141,7 +141,7 @@ function decode(retorno) {
 
 // Desafio 10
 function techList(array, name) {
- if 
+ 
   
 
 
