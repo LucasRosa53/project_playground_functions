@@ -89,7 +89,7 @@ function fizzBuzz(numero) {
   }
   return retornar;
 }
-console.log(fizzBuzz([9, 25]));
+// console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
 function encode(alternador) {
@@ -116,8 +116,28 @@ function encode(alternador) {
 }
 
 
-function decode() {
-  // 
+function decode(retorno) {
+
+  for (let index = 0; index < retorno.length; index += 1) {
+    if (retorno[index] === "1") {
+      retorno = retorno.replace("1", "a")
+    } else if (retorno[index] === "2") {
+      retorno = retorno.replace("2", "e")
+    } else if (retorno[index] === "3") {
+      retorno = retorno.replace("3", "i")
+    } else if (retorno[index] === "4") {
+      retorno = retorno.replace("4", "o")
+    } else if (retorno[index] === "5") {
+      retorno = retorno.replace("5", "u")
+    } else {
+
+    }
+
+  }
+  return retorno;
+ 
+}
+// console.log(decode("h3 th2r2"));
 
 // Desafio 10
 function techList() {
@@ -148,16 +168,3 @@ module.exports = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-let text = "hello";
-let result = text.replace("o", "0");
