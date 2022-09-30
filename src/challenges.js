@@ -92,12 +92,32 @@ function fizzBuzz(numero) {
 console.log(fizzBuzz([9, 25]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(alternador) {
+
+  for (let index = 0; index < alternador.length; index += 1) {
+
+    if (alternador[index] === "a") {
+      alternador = alternador.replace("a", "1")
+    } else if (alternador[index] === "e") {
+      alternador = alternador.replace("e", "2")
+    } else if (alternador[index] === "i") {
+      alternador = alternador.replace("i", "3")
+    } else if (alternador[index] === "o") {
+      alternador = alternador.replace("o", "4")
+    } else if (alternador[index] === "u") {
+      alternador = alternador.replace("u", "5")
+    } else {
+
+    }
+
+  }
+
+  return alternador;
 }
+
+
 function decode() {
-  // seu código aqui
-}
+  // 
 
 // Desafio 10
 function techList() {
@@ -117,3 +137,27 @@ module.exports = {
   splitSentence,
   techList,
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let text = "hello";
+let result = text.replace("o", "0");
