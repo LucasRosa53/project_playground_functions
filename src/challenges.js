@@ -141,11 +141,22 @@ function decode(retorno) {
 
 // Desafio 10
 function techList(array, name) {
+ if (array.length === 0) {
+   return "Vázio!";
+ }
+ for (let index = 0; index < array.length; index += 1) {
+
+  let objeto = {
+    tech: array.length,
+    name: name,
+   }
+
+ }
  
-  
 
+ }
+//  ['React', 'Jest', 'HTML', 'CSS', 'JavaScript']
 
-}
 
 
 module.exports = {
