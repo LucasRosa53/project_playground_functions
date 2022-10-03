@@ -147,14 +147,17 @@ function techList(array, name) {
  for (let index = 0; index < array.length; index += 1) {
 
   let objeto = {
-    tech: array.length,
+    tech: array[0].length,
     name: name,
+
    }
+  console.log(objeto);
 
  }
  
 
  }
+ techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas');
 //  ['React', 'Jest', 'HTML', 'CSS', 'JavaScript']
 
 
